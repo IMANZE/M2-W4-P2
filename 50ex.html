@@ -20,7 +20,7 @@
         border: 1.5px solid blue;
       }
       table {
-        border-radius: 25px;
+        border-radius: 15px;
       }
 
       tr:nth-child(2) td:first-child {
@@ -49,7 +49,19 @@
         visibility: hidden;
       }
       td {
-        border: 1px solid green
+        min-width: 110px
+        /* border: 1px solid green */
+      }
+      tr td:first-child {
+        border-left: 1px dotted red;
+      }
+
+      tr td:last-child {
+        border-right: 1px dotted red;
+      }
+      td {
+        border-bottom: 1px dotted red;
+        border-top: 1px dotted red;
       }
     </style>
  </head>
