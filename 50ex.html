@@ -20,7 +20,23 @@
         border: 1.5px solid blue;
       }
       table {
-        border-radius: 15px;
+        border-radius: 25px;
+      }
+
+      tr:nth-child(2) td:first-child {
+        border-top-left-radius: 1.5em;
+      }
+
+      tr:nth-child(2) td:last-child {
+        border-top-right-radius: 1.5em;
+      }
+
+      tr:last-child td:first-child {
+        border-bottom-left-radius: 1.5em;
+      }
+
+      tr:last-child td:last-child {
+        border-bottom-right-radius: 1.5em;
       }
        p {
         margin-bottom: 35px;
@@ -32,7 +48,9 @@
       .hidden {
         visibility: hidden;
       }
-
+      td {
+        border: 1px solid green
+      }
     </style>
  </head>
 <body>
