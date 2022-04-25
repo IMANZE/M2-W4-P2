@@ -321,6 +321,16 @@
         // EXTRA EXERCISES
 
         // 41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+        const alertUrl = function () {
+        const links = document.querySelectorAll("a");
+        for (let m = 0; m < links.length; m++) {
+          links[m].onmouseenter = function (e) {
+            alert(e.target.href);
+          };
+        }
+      };
+      alertUrl();
+
         // 42) Create a button that will hide every image on the page when clicked
         // 43) Create a button that will hide or show the table on the page when clicked
         // 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
