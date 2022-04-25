@@ -225,7 +225,28 @@
         };
 
         // 30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+        const returnHighestSum = function (array1, array2) {
+        let sum1 = 0;
 
+        for (let i = 0; i < array1.length; i++) {
+          sum1 = sum1 + array1[i];
+          //   sum1 += array1[i];
+        }
+
+        let sum2 = 0;
+
+        for (let index = 0; index < array2.length; index++) {
+          sum2 = sum2 + array2[index];
+          //   sum2 += array2[index];
+        }
+
+        if (sum1 >= sum2) {
+          return sum1;
+        } else {
+          return sum2;
+        }
+        // return sum1 >= sum2 ? sum1 : sum2;
+      };
         // DOM EXERCISES
 
         // 31) Get the element with an id of "container" from the page
