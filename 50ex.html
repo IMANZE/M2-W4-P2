@@ -254,8 +254,11 @@
 
         // 32) Get every <td> element from the page
           const tds = document.querySelectorAll("td");
-          
+
         // 33) Use a loop for printing the text inside of every <td> element in the page
+        for (let index = 0; index < tds.length; index++) {
+        tds[index].innerText = "text";
+        }
         // 34) Write a function to change the heading of the page
         // 35) Write a function to add an extra row to the table
         // 36) Write a function to add a class of "test" to each row in the table
