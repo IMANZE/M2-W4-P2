@@ -287,7 +287,16 @@
           trs[index].classList.add("test");
         }
       };
+
         // 37) Write a function to add a red background to every link in the page
+        const addRedBackground = function () {
+        const linksTag = document.querySelectorAll("a");
+        for (let i = 0; i < linksTag.length; i++) {
+          linksTag[i].classList.add("bg-red");
+        }
+      };
+      addRedBackground();
+
         // 38) Console log "Page loaded" when the page is correctly loaded
         // 39) Write a function to add new items to a unordered list
         // 40) Write a function to empty a list
