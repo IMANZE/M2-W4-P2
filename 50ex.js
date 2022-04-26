@@ -257,6 +257,19 @@
       deleteRandom();
      
      // 48) Add automatically a pink border to a cell when the mouse hovers it
+     const addPinkBorder = function () {
+        const cells = document.querySelectorAll("td");
+        cells.forEach((td) => {
+          td.onmouseenter = function (e) {
+            e.target.classList.add("border-pink");
+          };
+          td.onmouseleave = function (e) {
+            e.target.classList.remove("border-pink");
+          };
+        });
+      };
+      addPinkBorder();
+
      // 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
      // 50) Write a function to remove the last table from the page
 
