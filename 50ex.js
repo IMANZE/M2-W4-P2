@@ -232,6 +232,16 @@
       deleteLastCharacter();
 
      // 46) Change the background color of a <td> if the user clicks on it
+     const changeTdBg = function () {
+        const tds = document.querySelectorAll("td");
+        tds.forEach((td) => {
+          td.onclick = function (e) {
+            e.target.classList.toggle("bg-red");
+          };
+        });
+      };
+      changeTdBg();
+
      // 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
      // 48) Add automatically a pink border to a cell when the mouse hovers it
      // 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
