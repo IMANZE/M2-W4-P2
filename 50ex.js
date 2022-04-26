@@ -223,6 +223,14 @@
       sumNumbers();
 
      // 45) Delete the last letter from the heading each time the user clicks on it
+     const deleteLastCharacter = function () {
+        const h1 = document.querySelector("h1");
+        h1.onclick = function (e) {
+          h1.innerText = h1.innerText.substring(0, h1.innerText.length - 1);
+        };
+      };
+      deleteLastCharacter();
+
      // 46) Change the background color of a <td> if the user clicks on it
      // 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
      // 48) Add automatically a pink border to a cell when the mouse hovers it
