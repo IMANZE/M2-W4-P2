@@ -194,6 +194,19 @@
       hideAllImages();
 
      // 43) Create a button that will hide or show the table on the page when clicked
+     const toggleTable = function () {
+        const btn = document.createElement("button");
+        btn.innerText = "Toggle table";
+        btn.onclick = function () {
+          const table = document.querySelector("table");
+          table.classList.toggle("d-none");
+        };
+
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+      toggleTable();
+      
      // 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
      // 45) Delete the last letter from the heading each time the user clicks on it
      // 46) Change the background color of a <td> if the user clicks on it
