@@ -206,8 +206,22 @@
         body.appendChild(btn);
       };
       toggleTable();
-      
+
      // 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+     const sumNumbers = function () {
+        const tds = document.querySelectorAll("td");
+        let sum = 0;
+        tds.forEach((td) => {
+          const toNumber = parseInt(td.innerText);
+          const isNotNumber = isNaN(toNumber);
+          if (!isNotNumber) {
+            sum += toNumber;
+          }
+        });
+        console.log(sum);
+      };
+      sumNumbers();
+
      // 45) Delete the last letter from the heading each time the user clicks on it
      // 46) Change the background color of a <td> if the user clicks on it
      // 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
