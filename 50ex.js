@@ -271,7 +271,31 @@
       addPinkBorder();
 
      // 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+     const createTable = function () {
+      const body = document.querySelector("body");
+      const table = document.createElement("table");
+      const tbody = document.createElement("tbody");
+      table.appendChild(tbody);
+      body.appendChild(table);
+      for (let i = 0; i < 5; i++) {
+        const tr = document.createElement("tr");
+        tbody.appendChild(tr);
+        for (let j = 0; j < 3; j++) {
+          if (i === 0) {
+            const th = document.createElement("th");
+            th.innerText = "Heading " + (j + 1);
+            tr.appendChild(th);
+          } else {
+            const td = document.createElement("td");
+            td.innerText = `Row ${i} Col ${j + 1}`;
+            tr.appendChild(td);
+          }
+        }
+      }
+    };
+    createTable();
      // 50) Write a function to remove the last table from the page
+     
 
      /* WHEN YOU ARE FINISHED
        Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
