@@ -295,7 +295,11 @@
     };
     createTable();
      // 50) Write a function to remove the last table from the page
-     
+     const removeTable = function () {
+      const table = document.querySelectorAll("table")[1];
+      table.remove();
+    };
+    removeTable();
 
      /* WHEN YOU ARE FINISHED
        Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
